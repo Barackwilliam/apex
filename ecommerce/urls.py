@@ -41,6 +41,8 @@ urlpatterns = [
     path('admin-add-product-3', views.admin_add_product_view_3,name='admin-add-product-3'),
 
     path('way', views.way,name='way'),
+    path('hosting', views.hosting,name='hosting'),
+
 
 
     path('delete-product/<int:pk>', views.delete_product_view,name='delete-product'),

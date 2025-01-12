@@ -92,13 +92,20 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql', 
-        'NAME': 'apex',
-        'USER': 'apex',
+        'NAME': 'postgres',
+        'USER': 'postgres.uvuipwwqphxzmvknxjgy',
         'PASSWORD': 'NyumbaChap',
-        'HOST': 'apex.czo2ie4uiexa.eu-north-1.rds.amazonaws.com',
+        'HOST': 'aws-0-us-west-1.pooler.supabase.com',
         'PORT': '5432',  
     }
 }
+
+
+# user=postgres.uvuipwwqphxzmvknxjgy 
+# password=[YOUR-PASSWORD] 
+# host=aws-0-us-west-1.pooler.supabase.com
+# port=5432
+# dbname=postgres
 
 
 
@@ -227,8 +234,8 @@ MEDIA_URL = 'https://res.cloudinary.com/drc3xiipg/'
 
 
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default='postgres://apex:NyumbaChap@apex.czo2ie4uiexa.eu-north-1.rds.amazonaws.com:5432/apex'
-    )
-}
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default='postgres://apex:NyumbaChap@apex.czo2ie4uiexa.eu-north-1.rds.amazonaws.com:5432/apex'
+#     )
+# }
